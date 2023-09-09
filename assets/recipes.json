@@ -1,0 +1,622 @@
+[
+  {
+    "name": "Chili",
+    "category": "Mexican",
+    "ingredients": [
+      "black beans",
+      "kidney beans",
+      "corn",
+      "tomato sauce",
+      "diced tomatoes",
+      "onion",
+      "green pepper",
+      "garlic",
+      "chili powder",
+      "cumin",
+      "salt"
+    ],
+    "meal": "Dinner",
+    "calories": 363
+  },
+  {
+    "name": "Thai Pineapple Fried Rice",
+    "category": "Thai",
+    "ingredients": [
+      "cooked rice",
+      "pineapple chunks",
+      "tofu",
+      "bell peppers",
+      "carrots",
+      "peas",
+      "onion",
+      "garlic",
+      "soy sauce",
+      "curry powder",
+      "sriracha",
+      "sesame oil",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Dinner",
+    "calories": 320
+  },
+  {
+    "name": "Mushroom and Spinach Quesadillas",
+    "category": "Mexican",
+    "ingredients": [
+      "tortillas",
+      "mushrooms",
+      "spinach",
+      "red onion",
+      "nutritional yeast",
+      "garlic powder",
+      "cumin",
+      "paprika",
+      "salt",
+      "pepper",
+      "guacamole (for serving)"
+    ],
+    "meal": "Lunch",
+    "calories": 290
+  },
+  {
+    "name": "Mediterranean Stuffed Bell Peppers",
+    "category": "Mediterranean",
+    "ingredients": [
+      "bell peppers",
+      "quinoa",
+      "chickpeas",
+      "tomatoes",
+      "red onion",
+      "kalamata olives",
+      "fresh parsley",
+      "lemon juice",
+      "olive oil",
+      "cumin",
+      "coriander",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Dinner",
+    "calories": 350
+  },
+  {
+    "name": "Teriyaki Tofu Stir-Fry",
+    "category": "Asian",
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "bell peppers",
+      "carrots",
+      "snap peas",
+      "garlic",
+      "ginger",
+      "teriyaki sauce",
+      "sesame oil",
+      "cornstarch",
+      "rice",
+      "green onions",
+      "sesame seeds",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Dinner",
+    "calories": 330
+  },
+  {
+    "name": "Chickpea and Spinach Stuffed Sweet Potatoes",
+    "category": "American",
+    "ingredients": [
+      "sweet potatoes",
+      "chickpeas",
+      "spinach",
+      "onion",
+      "garlic",
+      "cumin",
+      "coriander",
+      "smoked paprika",
+      "lemon juice",
+      "olive oil",
+      "salt",
+      "pepper",
+      "yogurt (for topping)"
+    ],
+    "meal": "Dinner",
+    "calories": 310
+  },
+  {
+    "name": "Tofu and Vegetable Curry",
+    "category": "Indian",
+    "ingredients": [
+      "tofu",
+      "cauliflower",
+      "potatoes",
+      "peas",
+      "onion",
+      "garlic",
+      "ginger",
+      "curry powder",
+      "coconut milk",
+      "tomato paste",
+      "coriander",
+      "cayenne pepper",
+      "salt",
+      "pepper",
+      "basmati rice (for serving)"
+    ],
+    "meal": "Dinner",
+    "calories": 360
+  },
+  {
+    "name": "Avocado and Black Bean Salad",
+    "category": "Salads",
+    "ingredients": [
+      "avocado",
+      "black beans",
+      "corn",
+      "tomatoes",
+      "red onion",
+      "cilantro",
+      "lime juice",
+      "olive oil",
+      "cumin",
+      "chili powder",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Lunch",
+    "calories": 280
+  },
+  {
+    "name": "Cauliflower Buffalo Wings",
+    "category": "Appetizers",
+    "ingredients": [
+      "cauliflower florets",
+      "flour",
+      "water",
+      "garlic powder",
+      "onion powder",
+      "paprika",
+      "hot sauce",
+      "butter",
+      "agave nectar",
+      "salt",
+      "pepper",
+      "ranch dressing (for dipping)"
+    ],
+    "meal": "Snack",
+    "calories": 250
+  },
+  {
+    "name": "Pesto Zucchini Noodles",
+    "category": "Italian",
+    "ingredients": [
+      "zucchini noodles",
+      "cherry tomatoes",
+      "basil leaves",
+      "pine nuts",
+      "nutritional yeast",
+      "garlic",
+      "olive oil",
+      "lemon juice",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Dinner",
+    "calories": 270
+  },
+  {
+    "name": "Lentil and Vegetable Soup",
+    "category": "Soups",
+    "ingredients": [
+      "green lentils",
+      "carrots",
+      "celery",
+      "onion",
+      "garlic",
+      "vegetable broth",
+      "tomatoes",
+      "thyme",
+      "rosemary",
+      "bay leaves",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Lunch",
+    "calories": 240
+  },
+  {
+    "name": "Spinach and Artichoke Dip",
+    "category": "Appetizers",
+    "ingredients": [
+      "spinach",
+      "artichoke hearts",
+      "cream cheese",
+      "mayonnaise",
+      "nutritional yeast",
+      "garlic",
+      "onion powder",
+      "salt",
+      "pepper",
+      "whole grain crackers (for dipping)"
+    ],
+    "meal": "Snack",
+    "calories": 180
+  },
+  {
+    "name": "Tofu Scramble",
+    "category": "Breakfast",
+    "ingredients": [
+      "tofu",
+      "turmeric",
+      "nutritional yeast",
+      "onion",
+      "bell peppers",
+      "spinach",
+      "garlic",
+      "olive oil",
+      "salt",
+      "pepper",
+      "whole grain toast (optional)"
+    ],
+    "meal": "Breakfast",
+    "calories": 230
+  },
+  {
+    "name": "Soba Noodle Salad",
+    "category": "Asian",
+    "ingredients": [
+      "soba noodles",
+      "edamame",
+      "carrots",
+      "cucumber",
+      "red bell pepper",
+      "scallions",
+      "sesame seeds",
+      "cilantro",
+      "lime juice",
+      "soy sauce",
+      "sesame oil",
+      "maple syrup",
+      "garlic",
+      "ginger",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Lunch",
+    "calories": 320
+  },
+  {
+    "name": "Potato Leek Soup",
+    "category": "Soups",
+    "ingredients": [
+      "potatoes",
+      "leeks",
+      "onion",
+      "garlic",
+      "vegetable broth",
+      "nutritional yeast",
+      "thyme",
+      "rosemary",
+      "bay leaves",
+      "coconut milk",
+      "salt",
+      "pepper",
+      "crusty bread (for serving)"
+    ],
+    "meal": "Lunch",
+    "calories": 250
+  },
+  {
+    "name": "Chickpea Salad Sandwich",
+    "category": "Sandwiches",
+    "ingredients": [
+      "chickpeas",
+      "celery",
+      "red onion",
+      "mayonnaise",
+      "Dijon mustard",
+      "dill pickles",
+      "fresh dill",
+      "lemon juice",
+      "salt",
+      "pepper",
+      "whole grain bread",
+      "lettuce",
+      "tomato"
+    ],
+    "meal": "Lunch",
+    "calories": 270
+  },
+  {
+    "name": "Falafel Bowl",
+    "category": "Mediterranean",
+    "ingredients": [
+      "falafel",
+      "quinoa",
+      "cucumber",
+      "tomatoes",
+      "red onion",
+      "kalamata olives",
+      "tahini dressing",
+      "fresh parsley",
+      "lemon juice",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Dinner",
+    "calories": 340
+  },
+  {
+    "name": "BBQ Jackfruit Sandwich",
+    "category": "Sandwiches",
+    "ingredients": [
+      "jackfruit",
+      "BBQ sauce",
+      "red cabbage slaw",
+      "pickles",
+      "whole grain buns",
+      "mayonnaise",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Lunch",
+    "calories": 320
+  },
+  {
+    "name": "Sweet and Sour Tofu",
+    "category": "Asian",
+    "ingredients": [
+      "tofu",
+      "pineapple chunks",
+      "bell peppers",
+      "onion",
+      "garlic",
+      "ginger",
+      "cornstarch",
+      "soy sauce",
+      "rice vinegar",
+      "ketchup",
+      "agave nectar",
+      "salt",
+      "pepper",
+      "rice (for serving)"
+    ],
+    "meal": "Dinner",
+    "calories": 350
+  },
+  {
+    "name": "Roasted Vegetable Pizza",
+    "category": "Italian",
+    "ingredients": [
+      "pizza dough",
+      "tomato sauce",
+      "zucchini",
+      "bell peppers",
+      "red onion",
+      "cherry tomatoes",
+      "kalamata olives",
+      "artichoke hearts",
+      "nutritional yeast",
+      "olive oil",
+      "oregano",
+      "basil leaves",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Dinner",
+    "calories": 360
+  },
+  {
+    "name": "Chocolate Avocado Mousse",
+    "category": "Desserts",
+    "ingredients": [
+      "avocado",
+      "cocoa powder",
+      "maple syrup",
+      "vanilla extract",
+      "almond milk",
+      "salt",
+      "raspberries (for topping)"
+    ],
+    "meal": "Dessert",
+    "calories": 200
+  },
+  {
+    "name": "Thai Red Curry",
+    "category": "Thai",
+    "ingredients": [
+      "tofu",
+      "coconut milk",
+      "red curry paste",
+      "bell peppers",
+      "broccoli",
+      "carrots",
+      "bamboo shoots",
+      "basil leaves",
+      "lemongrass",
+      "lime leaves",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Dinner",
+    "calories": 370
+  },
+  {
+    "name": "Stuffed Bell Peppers",
+    "category": "American",
+    "ingredients": [
+      "bell peppers",
+      "quinoa",
+      "black beans",
+      "corn",
+      "tomatoes",
+      "onion",
+      "garlic",
+      "chili powder",
+      "cumin",
+      "salt",
+      "pepper",
+      "cheese (for topping)"
+    ],
+    "meal": "Dinner",
+    "calories": 320
+  },
+  {
+    "name": "Eggplant Rollatini",
+    "category": "Italian",
+    "ingredients": [
+      "eggplant slices",
+      "tofu ricotta",
+      "spinach",
+      "nutritional yeast",
+      "garlic",
+      "oregano",
+      "marinara sauce",
+      "olive oil",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Dinner",
+    "calories": 340
+  },
+  {
+    "name": "Black Bean Soup",
+    "category": "Soups",
+    "ingredients": [
+      "black beans",
+      "onion",
+      "garlic",
+      "red bell pepper",
+      "carrots",
+      "celery",
+      "vegetable broth",
+      "cumin",
+      "coriander",
+      "smoked paprika",
+      "lime juice",
+      "fresh cilantro",
+      "salt",
+      "pepper",
+      "avocado (for topping)"
+    ],
+    "meal": "Lunch",
+    "calories": 290
+  },
+  {
+    "name": "Thai Mango Salad",
+    "category": "Thai",
+    "ingredients": [
+      "ripe mango",
+      "red onion",
+      "cilantro",
+      "mint leaves",
+      "lime juice",
+      "chili flakes",
+      "cashews",
+      "agave nectar",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Lunch",
+    "calories": 240
+  },
+  {
+    "name": "Sweet Potato and Black Bean Enchiladas",
+    "category": "Mexican",
+    "ingredients": [
+      "sweet potatoes",
+      "black beans",
+      "red onion",
+      "bell pepper",
+      "corn tortillas",
+      "enchilada sauce",
+      "nutritional yeast",
+      "cumin",
+      "chili powder",
+      "salt",
+      "pepper",
+      "avocado (for topping)"
+    ],
+    "meal": "Dinner",
+    "calories": 360
+  },
+  {
+    "name": "Mediterranean Baked Falafel",
+    "category": "Mediterranean",
+    "ingredients": [
+      "chickpeas",
+      "red onion",
+      "garlic",
+      "parsley",
+      "coriander",
+      "cumin",
+      "smoked paprika",
+      "olive oil",
+      "lemon juice",
+      "whole wheat pita bread",
+      "tomatoes",
+      "cucumber",
+      "red onion",
+      "tahini sauce",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Dinner",
+    "calories": 330
+  },
+  {
+    "name": "Mexican Street Corn (Elote)",
+    "category": "Mexican",
+    "ingredients": [
+      "corn on the cob",
+      "mayonnaise",
+      "nutritional yeast",
+      "chili powder",
+      "lime wedges",
+      "fresh cilantro",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Snack",
+    "calories": 180
+  },
+  {
+    "name": "Thai Peanut Noodles",
+    "category": "Thai",
+    "ingredients": [
+      "rice noodles",
+      "tofu",
+      "red bell pepper",
+      "carrots",
+      "cucumber",
+      "green onions",
+      "peanuts",
+      "cilantro",
+      "lime juice",
+      "peanut sauce",
+      "salt",
+      "pepper"
+    ],
+    "meal": "Dinner",
+    "calories": 350
+  },
+  {
+    "name": "Banana Bread",
+    "category": "Desserts",
+    "ingredients": [
+      "ripe bananas",
+      "whole wheat flour",
+      "coconut sugar",
+      "applesauce",
+      "vanilla extract",
+      "baking powder",
+      "cinnamon",
+      "nutmeg",
+      "walnuts (optional)",
+      "salt"
+    ],
+    "meal": "Dessert",
+    "calories": 220
+  }
+]
