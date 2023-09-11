@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:app/Routes/DisplayYoutubeVideos.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class PossibleRecipes extends StatefulWidget {
   PossibleRecipes({Key? key, required this.ingredientList}) : super(key: key);
@@ -40,13 +41,13 @@ class _PossibleRecipesState extends State<PossibleRecipes> {
     }
 
     for (int i = 0; i < possibleRecipes.length; i++) {
+      possibleRecipes[i]["index"] = i;
       ingredientList.add(possibleRecipes[i]["ingredients"]);
     }
   }
 
   @override
   void initState() {
-    // TODO: implement initState
     readJsonFile();
     super.initState();
   }
@@ -57,40 +58,22 @@ class _PossibleRecipesState extends State<PossibleRecipes> {
       appBar: AppBar(
         title: const Text("Choose your recipe"),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: GridView.builder(
-          itemCount: possibleRecipes.length,
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              childAspectRatio: 1 / 2, crossAxisCount: 2),
-          itemBuilder: (BuildContext context, int index) {
-            return InkWell(
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => DisplayYoutubeVideos(
-                        title: possibleRecipes[index]["name"],
-                        choice:
-                            "https://www.youtube.com/results?search_query=" +
-                                possibleRecipes[index]["name"]),
-                  ),
-                );
-              },
-              child: Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+      body: StaggeredGrid.count(
+          crossAxisCount: 2,
+          children: possibleRecipes
+              .map(
+                (item) => Card(
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Expanded(
                             child: Card(
-                              color: Colors.blue[100],
+                              color: Colors.lightBlue[100],
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: Text(possibleRecipes[index]["category"]),
+                                child: Text(item["category"]),
                               ),
                             ),
                           ),
@@ -98,7 +81,7 @@ class _PossibleRecipesState extends State<PossibleRecipes> {
                             color: Colors.red[100],
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Text(possibleRecipes[index]["meal"]),
+                              child: Text(item["meal"]),
                             ),
                           ),
                         ],
@@ -110,38 +93,54 @@ class _PossibleRecipesState extends State<PossibleRecipes> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Text(
-                              possibleRecipes[index]["name"],
-                              style: const TextStyle(fontSize: 20.0),
+                              item['name'],
+                              style: const TextStyle(fontSize: 20),
                             ),
                           ),
                         ),
                       ),
-                      // Column(
-                      //   crossAxisAlignment: CrossAxisAlignment.start,
-                      //   children: ingredientList[index]
-                      //       .map((e) => Text(e.toString()))
-                      //       .toList(),
-                      // ),
                       SizedBox(
                         width: double.infinity,
                         child: Card(
-                          color: Colors.green[100],
+                          color: Colors.deepOrange[100],
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              "calories "+possibleRecipes[index]["calories"].toString()
-                            ),
+                            child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: ingredientList[item["index"]]
+                                    .map((e) => Text(e.toString()))
+                                    .toList()),
                           ),
                         ),
                       ),
+                      SizedBox(
+                        width: double.infinity,
+                        child: Padding(
+                          padding:
+                              const EdgeInsets.fromLTRB(4.0, 0.0, 4.0, 0.0),
+                          child: ElevatedButton(
+                            style:
+                                ElevatedButton.styleFrom(primary: Colors.red),
+                            child: const Text("Youtube It"),
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => DisplayYoutubeVideos(
+                                      title: item["name"],
+                                      choice:
+                                          "https://www.youtube.com/results?search_query=" +
+                                              item["name"]),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ),
-              ),
-            );
-          },
-        ),
-      ),
+              )
+              .toList()),
     );
   }
 }

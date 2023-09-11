@@ -21,7 +21,6 @@ class _RecipeListState extends State<RecipeList> {
     "onion",
     "green pepper",
     "chili powder",
-    "cumin",
     "cooked rice",
     "pineapple chunks",
     "tofu",
@@ -34,7 +33,16 @@ class _RecipeListState extends State<RecipeList> {
     "sriracha",
     "sesame oil",
     "salt",
-    "pepper"
+    "tortillas",
+    "mushrooms",
+    "spinach",
+    "red onion",
+    "nutritional yeast",
+    "garlic powder",
+    "cumin",
+    "paprika",
+    "pepper",
+    "guacamole (for serving)"
   ];
 
   void listOption(String ingredient) {
