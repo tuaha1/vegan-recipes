@@ -1,3 +1,4 @@
+import 'package:app/Components/AllRecipes.dart';
 import 'package:flutter/material.dart';
 import '../Components/ListOptions.dart';
 import '../Components/SelectedOptions.dart';
@@ -12,7 +13,7 @@ class RecipeList extends StatefulWidget {
 class _RecipeListState extends State<RecipeList> {
   int _currentIndex = 0;
 
-  List<String> recipeHolder = [
+  List recipeHolder = [
     "black beans",
     "kidney beans",
     "corn",
@@ -66,6 +67,7 @@ class _RecipeListState extends State<RecipeList> {
     final List<Widget> _pages = [
       listOptions(listOption, recipeHolder),
       selectedOptions(recipeHolder, removeIngredient, context),
+      displayAllRecipes(context)
     ];
 
     return Scaffold(
@@ -85,6 +87,10 @@ class _RecipeListState extends State<RecipeList> {
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: 'suggestions',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.list),
+            label: 'recipes',
           ),
         ],
       ),

@@ -1,8 +1,7 @@
 import 'dart:convert';
-import 'package:app/Routes/DisplayYoutubeVideos.dart';
+import 'package:app/Components/RecipeCard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class PossibleRecipes extends StatefulWidget {
   PossibleRecipes({Key? key, required this.ingredientList}) : super(key: key);
@@ -14,7 +13,7 @@ class PossibleRecipes extends StatefulWidget {
 
 class _PossibleRecipesState extends State<PossibleRecipes> {
   List<dynamic> possibleRecipes = [];
-  List<List<dynamic>> ingredientList = [];
+  List<List<dynamic>> ingredientsList = [];
 
   Future<void> readJsonFile() async {
     final String response = await rootBundle.loadString('assets/recipes.json');
@@ -42,7 +41,7 @@ class _PossibleRecipesState extends State<PossibleRecipes> {
 
     for (int i = 0; i < possibleRecipes.length; i++) {
       possibleRecipes[i]["index"] = i;
-      ingredientList.add(possibleRecipes[i]["ingredients"]);
+      ingredientsList.add(possibleRecipes[i]["ingredients"]);
     }
   }
 
@@ -55,92 +54,14 @@ class _PossibleRecipesState extends State<PossibleRecipes> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Choose your recipe"),
-      ),
-      body: StaggeredGrid.count(
-          crossAxisCount: 2,
-          children: possibleRecipes
-              .map(
-                (item) => Card(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Expanded(
-                            child: Card(
-                              color: Colors.lightBlue[100],
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text(item["category"]),
-                              ),
-                            ),
-                          ),
-                          Card(
-                            color: Colors.red[100],
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text(item["meal"]),
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        width: double.infinity,
-                        child: Card(
-                          color: Colors.green[100],
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              item['name'],
-                              style: const TextStyle(fontSize: 20),
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: double.infinity,
-                        child: Card(
-                          color: Colors.deepOrange[100],
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: ingredientList[item["index"]]
-                                    .map((e) => Text(e.toString()))
-                                    .toList()),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: double.infinity,
-                        child: Padding(
-                          padding:
-                              const EdgeInsets.fromLTRB(4.0, 0.0, 4.0, 0.0),
-                          child: ElevatedButton(
-                            style:
-                                ElevatedButton.styleFrom(primary: Colors.red),
-                            child: const Text("Youtube It"),
-                            onPressed: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => DisplayYoutubeVideos(
-                                      title: item["name"],
-                                      choice:
-                                          "https://www.youtube.com/results?search_query=" +
-                                              item["name"]),
-                                ),
-                              );
-                            },
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              )
-              .toList()),
-    );
+        appBar: AppBar(
+          title: const Text("Choose your recipe"),
+        ),
+        body: ListView.builder(
+            itemCount: possibleRecipes.length,
+            itemBuilder: (BuildContext context, int index) {
+              return recipeCard(
+                  possibleRecipes[index], context, ingredientsList);
+            }));
   }
 }
