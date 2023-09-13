@@ -22,28 +22,6 @@ class _RecipeListState extends State<RecipeList> {
     "onion",
     "green pepper",
     "chili powder",
-    "cooked rice",
-    "pineapple chunks",
-    "tofu",
-    "bell peppers",
-    "carrots",
-    "peas",
-    "garlic",
-    "soy sauce",
-    "curry powder",
-    "sriracha",
-    "sesame oil",
-    "salt",
-    "tortillas",
-    "mushrooms",
-    "spinach",
-    "red onion",
-    "nutritional yeast",
-    "garlic powder",
-    "cumin",
-    "paprika",
-    "pepper",
-    "guacamole (for serving)"
   ];
 
   void listOption(String ingredient) {
@@ -62,10 +40,16 @@ class _RecipeListState extends State<RecipeList> {
     });
   }
 
+  void handleSearchList(List ingredients) {
+    setState(() {
+      recipeHolder = ingredients;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final List<Widget> _pages = [
-      listOptions(listOption, recipeHolder),
+      listOptions(listOption, recipeHolder, context, handleSearchList),
       selectedOptions(recipeHolder, removeIngredient, context),
       displayAllRecipes(context)
     ];

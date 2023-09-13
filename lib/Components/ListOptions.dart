@@ -1,9 +1,10 @@
+import 'package:app/Components/SearchIngredients.dart';
 import 'package:app/Data/Ingredients.dart';
 import 'package:flutter/material.dart';
 import '../Data/Ingredients.dart';
 
-DefaultTabController listOptions(
-    void Function(String ingredient) listOption, addedList) {
+DefaultTabController listOptions(void Function(String ingredient) listOption,
+    addedList, context, void Function(List ingredients) handleSearchList) {
   List<Tab> myTabs = ingredients.keys.map((key) {
     return Tab(text: key);
   }).toList();
@@ -13,6 +14,23 @@ DefaultTabController listOptions(
     child: Scaffold(
       appBar: AppBar(
         title: const Text("What's on my fridge"),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: IconButton(
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => SearchIngredients(
+                          ingredientList: ingredients,
+                          searchListHandler: handleSearchList,
+                          recipeHolder: addedList),
+                    ),
+                  );
+                },
+                icon: const Icon(Icons.search)),
+          )
+        ],
         bottom: TabBar(tabs: myTabs),
       ),
       body: TabBarView(

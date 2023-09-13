@@ -5,7 +5,7 @@ Scaffold selectedOptions(
     List recipeHolder, Function removeIngredient, BuildContext context) {
   return Scaffold(
     appBar: AppBar(
-      title: const Text("Selected Items"),
+      title: const Text("Selected Ingredients"),
     ),
     body: Column(
       children: [
