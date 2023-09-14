@@ -13,16 +13,7 @@ class RecipeList extends StatefulWidget {
 class _RecipeListState extends State<RecipeList> {
   int _currentIndex = 0;
 
-  List recipeHolder = [
-    "black beans",
-    "kidney beans",
-    "corn",
-    "tomato sauce",
-    "diced tomatoes",
-    "onion",
-    "green pepper",
-    "chili powder",
-  ];
+  List recipeHolder = [];
 
   void listOption(String ingredient) {
     setState(() {

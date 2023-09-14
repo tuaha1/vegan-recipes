@@ -1,17 +1,22 @@
 [
   {
+    "name": "carrot halwa",
+    "category": "indian",
+    "ingredients": ["carrot"],
+    "meal": "Dessert",
+    "calories": "233"
+  },
+  {
     "name": "Chili",
     "category": "Mexican",
     "ingredients": [
       "black beans",
       "kidney beans",
       "corn",
-      "tomato sauce",
-      "diced tomatoes",
+      "tomato",
       "onion",
       "green pepper",
       "garlic",
-      "chili powder",
       "cumin",
       "salt"
     ],
@@ -26,7 +31,7 @@
       "pineapple chunks",
       "tofu",
       "bell peppers",
-      "carrots",
+      "carrot",
       "peas",
       "onion",
       "garlic",
@@ -173,7 +178,6 @@
     "ingredients": [
       "cauliflower florets",
       "flour",
-      "water",
       "garlic powder",
       "onion powder",
       "paprika",
@@ -257,7 +261,7 @@
       "olive oil",
       "salt",
       "pepper",
-      "whole grain toast (optional)"
+      "whole grain toast"
     ],
     "meal": "Breakfast",
     "calories": 230
@@ -605,7 +609,25 @@
     "name": "Banana Bread",
     "category": "Desserts",
     "ingredients": [
-      "ripe bananas",
+      "banana",
+      "wheat",
+      "coconut",
+      "applesauce",
+      "vanilla extract",
+      "baking powder",
+      "cinnamon",
+      "nutmeg",
+      "walnuts",
+      "salt"
+    ],
+    "meal": "Dessert",
+    "calories": 220
+  },
+  {
+    "name": "Banana Bread",
+    "category": "Desserts",
+    "ingredients": [
+      "Banana",
       "whole wheat flour",
       "coconut sugar",
       "applesauce",
@@ -613,10 +635,513 @@
       "baking powder",
       "cinnamon",
       "nutmeg",
-      "walnuts (optional)",
+      "walnuts",
       "salt"
     ],
     "meal": "Dessert",
     "calories": 220
+  },
+  {
+    "name": "Tropical Fruit Salad",
+    "category": "Salad",
+    "ingredients": [
+      "Mango",
+      "Papaya",
+      "Orange",
+      "Grapes",
+      "Pineapple",
+      "Coconut"
+    ],
+    "meal": "Dessert",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Apple and Pomegranate Salad",
+    "category": "Salad",
+    "ingredients": [
+      "Apple",
+      "Pomegranate"
+    ],
+    "meal": "Appetizer",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Watermelon Lemonade",
+    "category": "Beverage",
+    "ingredients": [
+      "Watermelon",
+      "Lemon"
+    ],
+    "meal": "Drink",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Mango Smoothie",
+    "category": "Beverage",
+    "ingredients": [
+      "Mango",
+      "Yogurt",
+      "Milk",
+      "Honey",
+      "Ice cubes"
+    ],
+    "meal": "Breakfast",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Fruit Salad with Kiwi Dressing",
+    "category": "Salad",
+    "ingredients": [
+      "Pineapple",
+      "Strawberry",
+      "Grapes",
+      "Papaya",
+      "Kiwi"
+    ],
+    "meal": "Lunch",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Mango Lassi",
+    "category": "Beverage",
+    "ingredients": [
+      "Mango",
+      "Yogurt",
+      "Milk",
+      "Sugar"
+    ],
+    "meal": "Drink",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Grapes and Apple Snack",
+    "category": "Snack",
+    "ingredients": [
+      "Grapes",
+      "Apple"
+    ],
+    "meal": "Snack",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Pineapple Salsa",
+    "category": "Appetizer",
+    "ingredients": [
+      "Pineapple",
+      "Red onion",
+      "Cilantro",
+      "Lime juice",
+      "Jalapeño"
+    ],
+    "meal": "Appetizer",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Coconut Rice Pudding",
+    "category": "Desserts",
+    "ingredients": [
+      "Coconut",
+      "Rice",
+      "Sugar",
+      "Milk",
+      "Vanilla extract",
+      "Cinnamon"
+    ],
+    "meal": "Dessert",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Papaya Smoothie",
+    "category": "Beverage",
+    "ingredients": [
+      "Papaya",
+      "Yogurt",
+      "Milk",
+      "Honey",
+      "Ice cubes"
+    ],
+    "meal": "Breakfast",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Lemon-Infused Watermelon Salad",
+    "category": "Salad",
+    "ingredients": [
+      "Watermelon",
+      "Lemon",
+      "Mint leaves",
+      "Honey"
+    ],
+    "meal": "Lunch",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Pineapple Coconut Smoothie",
+    "category": "Beverage",
+    "ingredients": [
+      "Pineapple",
+      "Coconut",
+      "Yogurt",
+      "Milk",
+      "Honey",
+      "Ice cubes"
+    ],
+    "meal": "Drink",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Jackfruit Tacos",
+    "category": "Main Course",
+    "ingredients": [
+      "Jackfruit",
+      "Taco shells",
+      "Avocado",
+      "Lettuce",
+      "Tomato",
+      "Onion",
+      "Cilantro",
+      "Lime juice",
+      "Spices (e.g., cumin, chili powder)"
+    ],
+    "meal": "Dinner",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Sapota Milkshake",
+    "category": "Beverage",
+    "ingredients": [
+      "Sapota",
+      "Milk",
+      "Sugar",
+      "Cardamom powder",
+      "Ice cubes"
+    ],
+    "meal": "Drink",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Litchi Sorbet",
+    "category": "Desserts",
+    "ingredients": [
+      "Litchi",
+      "Sugar",
+      "Lemon juice"
+    ],
+    "meal": "Dessert",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Custard Apple Smoothie",
+    "category": "Beverage",
+    "ingredients": [
+      "Custard apple",
+      "Yogurt",
+      "Milk",
+      "Honey",
+      "Ice cubes"
+    ],
+    "meal": "Breakfast",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Strawberry Parfait",
+    "category": "Desserts",
+    "ingredients": [
+      "Strawberry",
+      "Yogurt",
+      "Granola",
+      "Honey"
+    ],
+    "meal": "Dessert",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Dragon Fruit Salad",
+    "category": "Salad",
+    "ingredients": [
+      "Dragon fruit",
+      "Mango",
+      "Kiwi",
+      "Lime juice",
+      "Honey"
+    ],
+    "meal": "Dessert",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Avocado Toast",
+    "category": "Breakfast",
+    "ingredients": [
+      "Avocado",
+      "Whole wheat bread",
+      "Lemon juice",
+      "Salt",
+      "Black pepper",
+      "Red pepper flakes"
+    ],
+    "meal": "Breakfast",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Guava Jam",
+    "category": "Condiment",
+    "ingredients": [
+      "Guava",
+      "Sugar",
+      "Lemon juice"
+    ],
+    "meal": "Condiment",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Orange Glazed Chicken",
+    "category": "Main Course",
+    "ingredients": [
+      "Orange",
+      "Chicken breasts",
+      "Honey",
+      "Soy sauce",
+      "Garlic",
+      "Ginger",
+      "Cornstarch",
+      "Green onions",
+      "Sesame seeds"
+    ],
+    "meal": "Dinner",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Grapes and Cheese Platter",
+    "category": "Appetizer",
+    "ingredients": [
+      "Grapes",
+      "Assorted cheeses",
+      "Crackers",
+      "Honey",
+      "Nuts (e.g., almonds, walnuts)"
+    ],
+    "meal": "Appetizer",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Pomegranate Vinaigrette Salad",
+    "category": "Salad",
+    "ingredients": [
+      "Pomegranate",
+      "Olive oil",
+      "Balsamic vinegar",
+      "Lettuce",
+      "Cucumber",
+      "Red onion",
+      "Feta cheese"
+    ],
+    "meal": "Lunch",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Lemon Garlic Shrimp",
+    "category": "Main Course",
+    "ingredients": [
+      "Lemon",
+      "Shrimp",
+      "Garlic",
+      "Butter",
+      "Parsley",
+      "Salt",
+      "Black pepper"
+    ],
+    "meal": "Dinner",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Kiwi Sorbet",
+    "category": "Desserts",
+    "ingredients": [
+      "Kiwi",
+      "Lemon juice"
+    ],
+    "meal": "Dessert",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Dragon Fruit Smoothie Bowl",
+    "category": "Breakfast",
+    "ingredients": [
+      "Dragon fruit",
+      "Banana",
+      "Coconut milk",
+      "Chia seeds",
+      "Granola",
+      "Berries (e.g., strawberries, blueberries)"
+    ],
+    "meal": "Breakfast",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Avocado Cilantro Dressing",
+    "category": "Condiment",
+    "ingredients": [
+      "Avocado",
+      "Cilantro",
+      "Lime juice",
+      "Greek yogurt",
+      "Garlic",
+      "Salt",
+      "Black pepper"
+    ],
+    "meal": "Condiment",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Mango Chicken Curry",
+    "category": "Main Course",
+    "ingredients": [
+      "Mango",
+      "Chicken thighs",
+      "Onion",
+      "Garlic",
+      "Ginger",
+      "Coconut milk",
+      "Curry powder",
+      "Cilantro"
+    ],
+    "meal": "Dinner",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Strawberry Oatmeal",
+    "category": "Breakfast",
+    "ingredients": [
+      "Strawberry",
+      "Oats",
+      "Milk",
+      "Honey",
+      "Vanilla extract"
+    ],
+    "meal": "Breakfast",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Papaya Salsa",
+    "category": "Appetizer",
+    "ingredients": [
+      "Papaya",
+      "Red bell pepper",
+      "Red onion",
+      "Cilantro",
+      "Lime juice",
+      "Jalapeño"
+    ],
+    "meal": "Appetizer",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Coconut Curry Soup",
+    "category": "Soup",
+    "ingredients": [
+      "Coconut",
+      "Red lentils",
+      "Onion",
+      "Garlic",
+      "Ginger",
+      "Curry paste",
+      "Coconut milk",
+      "Lime juice",
+      "Cilantro",
+      "Chili flakes"
+    ],
+    "meal": "Lunch",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Jackfruit Tacos",
+    "category": "Main Course",
+    "ingredients": [
+      "Jackfruit",
+      "Taco shells",
+      "Avocado",
+      "Lettuce",
+      "Tomato",
+      "Onion",
+      "Cilantro",
+      "Lime juice",
+      "Spices (e.g., cumin, chili powder)"
+    ],
+    "meal": "Dinner",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Sapota Chutney",
+    "category": "Condiment",
+    "ingredients": [
+      "Sapota",
+      "Green chili",
+      "Cilantro",
+      "Lemon",
+      "Salt"
+    ],
+    "meal": "Condiment",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Litchi Ice Cream",
+    "category": "Desserts",
+    "ingredients": [
+      "Litchi",
+      "Heavy cream",
+      "Condensed milk",
+      "Vanilla extract"
+    ],
+    "meal": "Dessert",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Custard Apple Smoothie Bowl",
+    "category": "Breakfast",
+    "ingredients": [
+      "Custard apple",
+      "Banana",
+      "Yogurt",
+      "Granola",
+      "Honey"
+    ],
+    "meal": "Breakfast",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Strawberry Spinach Salad",
+    "category": "Salad",
+    "ingredients": [
+      "Strawberry",
+      "Spinach",
+      "Feta cheese",
+      "Walnuts",
+      "Balsamic vinaigrette dressing"
+    ],
+    "meal": "Lunch",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Kiwi Popsicles",
+    "category": "Desserts",
+    "ingredients": [
+      "Kiwi",
+      "Honey",
+      "Lime juice"
+    ],
+    "meal": "Dessert",
+    "calories": "Varies by portion"
+  },
+  {
+    "name": "Dragon Fruit Smoothie",
+    "category": "Beverage",
+    "ingredients": [
+      "Dragon fruit",
+      "Coconut water",
+      "Lime juice",
+      "Honey"
+    ],
+    "meal": "Drink",
+    "calories": "Varies by portion"
   }
 ]

@@ -31,7 +31,7 @@ DefaultTabController listOptions(void Function(String ingredient) listOption,
                 icon: const Icon(Icons.search)),
           )
         ],
-        bottom: TabBar(tabs: myTabs),
+        bottom: TabBar(isScrollable: true, tabs: myTabs),
       ),
       body: TabBarView(
         children: ingredients.keys.map((e) {

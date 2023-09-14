@@ -19,6 +19,7 @@ Scaffold selectedOptions(
                   child: ListTile(
                     title: Text(recipeHolder[index]),
                     trailing: IconButton(
+                      color: Colors.green,
                       onPressed: () {
                         removeIngredient(recipeHolder[index]);
                       },
@@ -30,11 +31,13 @@ Scaffold selectedOptions(
             ),
           ),
         ),
-        SizedBox(
+        Container(
+          decoration: const BoxDecoration(color: Colors.white),
           width: double.infinity,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: OutlinedButton(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(primary: Colors.green),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(

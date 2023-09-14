@@ -19,12 +19,14 @@ class _PossibleRecipesState extends State<PossibleRecipes> {
     final String response = await rootBundle.loadString('assets/recipes.json');
     final data = await json.decode(response);
 
+    print(data.length);
+
     for (int i = 0; i < data.length; i++) {
       int score = 0;
 
       for (int j = 0; j < data[i]["ingredients"].length; j++) {
         for (int y = 0; y < widget.ingredientList.length; y++) {
-          if (data[i]["ingredients"][j] == widget.ingredientList[y]) {
+          if (data[i]["ingredients"][j] == widget.ingredientList[y].toString().toLowerCase()) {
             score++;
           }
         }
@@ -54,14 +56,20 @@ class _PossibleRecipesState extends State<PossibleRecipes> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Choose your recipe"),
-        ),
-        body: ListView.builder(
-            itemCount: possibleRecipes.length,
-            itemBuilder: (BuildContext context, int index) {
-              return recipeCard(
-                  possibleRecipes[index], context, ingredientsList);
-            }));
+      appBar: AppBar(
+        title: const Text("Choose your recipe"),
+      ),
+      body: possibleRecipes.isNotEmpty
+          ? ListView.builder(
+              itemCount: possibleRecipes.length,
+              itemBuilder: (BuildContext context, int index) {
+                return recipeCard(
+                    possibleRecipes[index], context, ingredientsList);
+              },
+            )
+          : const Center(
+              child: Text("Add more recipes"),
+            ),
+    );
   }
 }
